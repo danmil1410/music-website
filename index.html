@@ -1,91 +1,137 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="Music website for music lovers">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="css/hamburgers.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-  <title>Music website</title>
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="Edison - music website for music lovers" name="description">
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/hamburgers.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <title>Edison</title>
 </head>
 
 <body>
-  <main class="container">
-    <section class="container__header">
-      <ul class="container__nav">
-        <a class="link-primary" href="#"><img src="img/logo.png" alt="logo"></a>
-        <li><a href="#">Things</a></li>
-        <li><a href="#">Access</a></li>
-        <li><a href="#">Message</a></li>
-        <li><a href="#">Preview</a></li>
-        <li><a href="#">Contact</a></li>
-        <div class="divider"></div>
-        <li><a class="link-hidden" href="#">Sign Up</a></li>
-        <li><a class="link-hidden" href="#">Log In</a></li>
-      </ul>
-      <section class="container__article" data-aos="zoom-out" data-aos-duration="600" data-aos-once="true">
+  <main class="main">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Things</a></li>
+          <li class="nav__item"><a href="#">Access</a></li>
+          <li class="nav__item"><a href="#">Message</a></li>
+          <li class="nav__item"><a href="#">Preview</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+          <div class="nav__divider"></div>
+          <li class="nav__item nav__item--dark"><a href="#">Sign Up</a></li>
+          <li class="nav__item nav__item--dark"><a href="#">Log In</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
         <h1>Music is for people</h1>
         <button type="button" name="button">Buy a freedom for 5$</button>
       </section>
-    </section>
-    <article class="description">
-      <h5 class="h5--desc" data-aos="zoom-in" data-aos-duration="600" data-aos-once="true">Choose your plan</h5>
-      <section class="jumbotron">
-        <section class="section" data-aos="fade-left" data-aos-duration="600" data-aos-once="true" data-aos-anchor-placement="top-bottom">
+    </header>
+    <section class="description">
+      <div class="jumbotron">
+        <h5>Choose your plan</h5>
+        <div class="jumbotron__container jumbotron__container--first">
           <h3>Basic</h3>
           <h4>5$ / month</h4>
           <p>Most functions at the lowest price. You can listen to your favourite music without problems. Personal playlist and offline music is disabled.</p>
           <h5>Activate</h5>
-        </section>
-        <section class="section" data-aos="fade-left" data-aos-duration="600" data-aos-once="true" data-aos-anchor-placement="top-bottom">
+        </div>
+        <div class="jumbotron__container jumbotron__container--second">
           <h3>Premium</h3>
           <h4>15$ / month</h4>
           <p>Personal playlist and offline music enabled. You can do almost everything you want. You are able to download up to 100 songs.</p>
           <h5>Activate</h5>
-        </section>
-        <section class="section" data-aos="fade-left" data-aos-duration="600" data-aos-once="true" data-aos-anchor-placement="top-bottom">
+        </div>
+        <div class="jumbotron__container jumbotron__container--third">
           <h3>Ultimate</h3>
           <h4>25$ / month</h4>
           <p>Do what you want, where you want, anywhere. Download as many songs as you want. Exclusive music videos are availbile just for you.</p>
           <h5>Activate</h5>
-        </section>
-      </section>
-    </article>
-    <article class="description description--hero">
-      <section class="jumbotron jumbotron--hero">
-        <h2>It's invading my mind..</h2>
-        <button type="button" name="button">Buy a freedom for 5$</button>
-      </section>
-    </article>
-    <article class="description">
-      <h5 class="h5--desc" data-aos="zoom-in" data-aos-duration="600" data-aos-once="true">What can you do?</h5>
-      <section class="jumbotron">
-        <section class="section" data-aos="fade-left" data-aos-duration="600" data-aos-once="true">
-          <i class="fa fa-headphones section__icon" aria-hidden="true"></i>
-          <p class="section__par">Music personalized for your headphones. We are choosing the best songs depend on your mood.</p>
-        </section>
-        <section class="section" data-aos="fade-left" data-aos-duration="600" data-aos-once="true">
-          <i class="fa fa-play section__icon" aria-hidden="true"></i>
-          <p class="section__par">Unlimited amount of plays for your music device. You decide what you are playing at the moment.</p>
-        </section>
-        <section class="section" data-aos="fade-left" data-aos-duration="600" data-aos-once="true">
-          <i class="fa fa-volume-up section__icon" aria-hidden="true"></i>
-          <p class="section__par">Stream everywhere you want. As long as you want. Connect your device to your favourite things.</p>
-        </section>
-      </section>
-    </article>
-    <section class="container__footer">
-
+        </div>
+      </div>
     </section>
+    <section class="banner">
+      <div class="hero hero--banner">
+        <h2>Play your favourite music</h2>
+        <button type="button" name="button">Buy a freedom for 5$</button>
+      </div>
+    </section>
+    <section class="description">
+      <div class="jumbotron">
+        <h5>What can you do?</h5>
+        <div class="jumbotron__container jumbotron__container--first">
+          <i class="fa fa-headphones section__icon" aria-hidden="true"></i>
+          <p>Music personalized for your headphones. We are choosing the best songs depend on your mood.</p>
+        </div>
+        <div class="jumbotron__container jumbotron__container--second">
+          <i class="fa fa-play section__icon" aria-hidden="true"></i>
+          <p>Unlimited amount of plays for your music device. You decide what you are playing at the moment.</p>
+        </div>
+        <div class="jumbotron__container jumbotron__container--third">
+          <i class="fa fa-volume-up section__icon" aria-hidden="true"></i>
+          <p>Stream everywhere you want. As long as you want. Connect your device to your favourite things.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="hero hero--contact">
+        <div class="hero__container hero__container--first">
+          <h2>Contact</h2>
+        </div>
+        <div class="hero__container">
+          <p>If you have any issues with browsing this website, just type an e-mail to our Edison Support team. We will find and solve the problem.</p>
+          <form action="https://formspree.io/daniel.milkiewicz@outlook.com" class="form" method="post">
+            <div class="form__item">
+              <input name="name" placeholder="First name, second name, company name" required="" type="text"> <input name="_replyto" placeholder="Contact e-mail" required="" type="email">
+            </div>
+            <textarea name="content" placeholder="Message content..." required="" rows="8"></textarea> <input type="submit" value="Send">
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="footer__container">
+        <div class="footer__item">
+          <a class="nav__logo nav__logo--footer" href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="footer__item">
+          <h5>Company</h5>
+          <a>Informations</a>
+          <a>Work</a>
+          <a>For press</a>
+          <a>News</a>
+        </div>
+        <div class="footer__item">
+          <h5>Users</h5>
+          <a>For users</a>
+          <a>For developers</a>
+          <a>Brands</a>
+        </div>
+        <div class="footer__item">
+          <h5>Shortcuts</h5>
+          <a>Help</a>
+          <a>Gift cards</a>
+          <a>Music player</a>
+        </div>
+      </section>
+    </footer>
   </main>
 </body>
-<script src="https://use.fontawesome.com/9d279d1eec.js"></script>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+<script src="js/hamburgers.js" type="text/javascript"></script>
 
 </html>
